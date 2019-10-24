@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "730209ee-b3c7-4759-8786-c6b362f3f594",
+            "Value": {
+                "id": "cbee6dd3-d5f2-4d3f-bd00-5c590e7b823e",
+                "resourcePath": "sprites\\spr_wall\\spr_wall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "751dd493-25d7-48f2-8927-dfcb7da661e9",
             "Value": {
                 "id": "8dd3dd3c-7eae-4762-948d-2b296918ffb8",
@@ -151,6 +159,14 @@
             }
         },
         {
+            "Key": "b9270582-61f3-4d30-ac53-6d4a6b15d559",
+            "Value": {
+                "id": "6302197b-73de-41bc-b065-8b41f5bcbc3b",
+                "resourcePath": "objects\\obj_wall\\obj_wall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ba318ac1-33d4-46a2-92f8-7391e4540e1d",
             "Value": {
                 "id": "7d36007b-41e3-4f05-8716-ecf419c3f3a8",
@@ -159,11 +175,27 @@
             }
         },
         {
+            "Key": "cbb6b0f5-b31a-4880-af6c-edc106f7b855",
+            "Value": {
+                "id": "0a5fb64b-5067-4f59-b475-bb623fe2e453",
+                "resourcePath": "scripts\\get_input\\get_input.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "f418ab5a-37e0-4415-a6be-70490aa37255",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "e2fe19ef-c6c7-4e72-aa84-a4f4f3b9d026",
+            "Value": {
+                "id": "75a72fb5-c504-494d-907e-0b606b17190c",
+                "resourcePath": "objects\\obj_player\\obj_player.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -183,6 +215,14 @@
             }
         },
         {
+            "Key": "f6230c43-d1ea-49c6-80da-9e2c5c2bb6fd",
+            "Value": {
+                "id": "c2895fbb-cd31-4bd4-83f2-eb89db2750d2",
+                "resourcePath": "sprites\\spr_player_temp\\spr_player_temp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f9690468-5f6f-4b32-bdd2-741f07139216",
             "Value": {
                 "id": "6b1515ac-fd36-4d87-918a-30e4c54ce9e9",
@@ -192,7 +232,7 @@
         }
     ],
     "script_order": [
-        
+        "cbb6b0f5-b31a-4880-af6c-edc106f7b855"
     ],
     "tutorial": ""
 }
