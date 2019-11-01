@@ -1,4 +1,5 @@
 /// @description every frame
 
 get_input();
-script_execute(state);
+script_execute(move_state);
+script_execute(draw_pointer);
