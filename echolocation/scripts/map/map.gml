@@ -1,3 +1,4 @@
+/// @func map(value, initial_lower_bound, initial_upper_bound, desired_lower_bound, desired_upper_bound);
 /// @description Maps a number from one range to another
 /// @param value
 /// @param initial_lower_bound

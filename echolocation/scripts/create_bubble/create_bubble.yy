@@ -1,8 +1,8 @@
 {
-    "id": "31548ffa-233c-45af-aa5f-59d39d377676",
+    "id": "f8246fa1-4849-4902-a656-a9f724427fc8",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "draw_pointer",
+    "name": "create_bubble",
     "IsCompatibility": false,
     "IsDnD": false
 }

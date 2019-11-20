@@ -1,10 +1,10 @@
 /// @description change the size of the circle
 if(growing){
 	if(size < maxSize){
-		size++;
+		size += growSpeed;
 	} else {
 		growing = false;
 	}
 } else {
-	size-= 0.5;
+	size -= shrinkSpeed;
 }
