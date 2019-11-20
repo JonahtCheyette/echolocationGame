@@ -8,4 +8,3 @@ if(mouse_x - x < 0){
 bullets[|ds_list_size(bullets) - 1].hspd = lengthdir_x(bullets[|ds_list_size(bullets) - 1].spd, bullets[|ds_list_size(bullets) - 1].dir);
 bullets[|ds_list_size(bullets) - 1].vspd = lengthdir_y(bullets[|ds_list_size(bullets) - 1].spd, bullets[|ds_list_size(bullets) - 1].dir);
 bullets[|ds_list_size(bullets) - 1].image_angle = bullets[|ds_list_size(bullets) - 1].dir;
-show_debug_message(string(bullets[|ds_list_size(bullets) - 1].dir));
