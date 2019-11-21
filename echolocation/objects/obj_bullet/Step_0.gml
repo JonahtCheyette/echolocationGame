@@ -12,8 +12,12 @@ if (place_meeting(x + hspd, y + vspd, obj_wall)){
 	vspd = 0;
 }
 
-x += hspd;
-y += vspd;
+if(!firstFrame){
+	x += hspd;
+	y += vspd;
+} else {
+	firstFrame = false;
+}
 
 if(!hit){
 	create_bubble_ext(x + hspd/2, y + vspd/2,6,2,3, bubbleDrawModes.REGULAR);

@@ -5,3 +5,4 @@ spd = 10;
 hit = false;
 image_xscale = 1/8;
 image_yscale = 1/8;
+firstFrame = true;
