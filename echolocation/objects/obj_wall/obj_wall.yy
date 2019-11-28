@@ -25,7 +25,7 @@
             "m_owner": "b9270582-61f3-4d30-ac53-6d4a6b15d559"
         },
         {
-            "id": "505e6549-d5cf-44c6-acda-a58acec33cd1",
+            "id": "ba657c79-5d57-4e43-993b-6f239b916fc4",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
