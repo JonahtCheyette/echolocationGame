@@ -7,7 +7,7 @@ if (place_meeting(x + hspd, y + vspd, obj_wall)){
 		x += hspd/spd;
 		y += vspd/spd;
 	}
-	create_bubble(x,y,15,1,2);
+	create_bubble(x,y,15,1,0);
 	hspd = 0;
 	vspd = 0;
 }

@@ -1,5 +1,6 @@
 /// @desc initialize
-
+image_xscale = 3/20;
+image_yscale = 3/20;
 spd = 1;
 hspd = 0;
 vspd = 0;

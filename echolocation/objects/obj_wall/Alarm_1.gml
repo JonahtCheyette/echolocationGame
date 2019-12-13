@@ -66,3 +66,23 @@ if(array_height_2d(erasersRight) == 0){
 	barsRight[array_height_2d(barsRight), 0] = erasersRight[array_height_2d(erasersRight) - 1, 1];
 	barsRight[array_height_2d(barsRight)- 1, 1] = y + sprite_height;
 }
+
+for(var i = 0; i < array_height_2d(barsTop); i++){
+	barsTop[i, 0]--;
+	barsTop[i, 1]--;
+}
+
+for(var i = 0; i < array_height_2d(barsLeft); i++){
+	barsLeft[i, 0]--;
+	barsLeft[i, 1]--;
+}
+
+for(var i = 0; i < array_height_2d(barsRight); i++){
+	barsRight[i, 0]--;
+	barsRight[i, 1]--;
+}
+
+for(var i = 0; i < array_height_2d(barsBottom); i++){
+	barsBottom[i, 0]--;
+	barsBottom[i, 1]--;
+}
