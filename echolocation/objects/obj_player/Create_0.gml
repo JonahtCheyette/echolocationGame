@@ -1,9 +1,9 @@
 /// @desc initialize
-image_xscale = 3/20;
-image_yscale = 3/20;
 spd = 1;
 hspd = 0;
 vspd = 0;
 len = 0;
 dir = 0;
 bullets = ds_list_create();
+stepCounter = 0;
+stepMax = 25;
