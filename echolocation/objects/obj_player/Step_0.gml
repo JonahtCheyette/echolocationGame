@@ -15,8 +15,8 @@ hspd = lengthdir_x(len, dir);
 vspd = lengthdir_y(len, dir);
 
 // collisions
-if (place_meeting(x + hspd, y, obj_wall)){
-	while(!place_meeting(x + sign(hspd), y, obj_wall)){
+if (collision_circle(x + hspd, y, 7.5, obj_wall, false, true) != noone){
+	while(collision_circle(x + hspd, y, 7.5, obj_wall, false, true) == noone){
 		x += sign(hspd);
 	}
 	hspd = 0;
@@ -31,8 +31,8 @@ if (place_meeting(x + hspd, y, obj_testEnemy)){
 
 x += hspd;
 
-if (place_meeting(x, y + vspd, obj_wall)){
-	while(!place_meeting(x, y + sign(vspd), obj_wall)){
+if (collision_circle(x, y + vspd, 7.5, obj_wall, false, true) != noone){
+	while(collision_circle(x, y + vspd, 7.5, obj_wall, false, true) == noone){
 		y += sign(vspd);
 	}
 	vspd = 0;

@@ -11,3 +11,5 @@ bulletTimerMax = 40;
 runBulletTimer = false;
 turnSpeed = 2;
 coneOfVision = 5;
+maxHealth = 50;
+enemyHealth = maxHealth;

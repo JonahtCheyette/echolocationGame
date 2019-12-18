@@ -7,3 +7,4 @@ image_xscale = 1/32;
 image_yscale = 1/32;
 firstFrame = true;
 create_bubble(x, y, 15, 1, 2);
+damage = 25;

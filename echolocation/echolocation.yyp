@@ -50,7 +50,7 @@
             "Key": "0aa1f20d-45ee-4bb1-918a-4612db1f0c8b",
             "Value": {
                 "id": "3e4a4c09-5240-47d6-9494-d382e9e14d35",
-                "resourcePath": "sprites\\spr_player\\spr_player.yy",
+                "resourcePath": "sprites\\spr_playerStart\\spr_playerStart.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -92,6 +92,14 @@
                 "id": "8b51a83e-e490-435f-82f8-c709ffd12c40",
                 "resourcePath": "views\\24b346af-aef6-4a43-ba76-5b1dc39e8a77.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2ba550bd-3a0e-4e40-8ebd-d4da37367b9a",
+            "Value": {
+                "id": "9735a6e7-b695-46c1-a470-9f53c2e578c9",
+                "resourcePath": "sprites\\spr_player\\spr_player.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -204,6 +212,14 @@
                 "id": "07fe6261-b934-41bf-9148-71c69a7dd3fc",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "a9f99e9b-f3ea-45c8-81cd-8e3ee988c4e8",
+            "Value": {
+                "id": "f02bbbd0-e208-436f-a4c7-0b838f483f6c",
+                "resourcePath": "sprites\\spr_noCollision\\spr_noCollision.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

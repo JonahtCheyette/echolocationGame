@@ -46,17 +46,10 @@ if(!runBulletTimer){
 
 	y += vspd;
 
-	for(var i = ds_list_size(bullets) - 1; i >= 0; i--){
-		if(bullets[|i].hit){
-			instance_destroy(bullets[|i]);
-			ds_list_delete(bullets,i);
-		}
-	}
-
 	if(!(vspd == 0 && hspd == 0)){
 		stepCounter++;
 		if(stepCounter == stepMax){
-			create_bubble(x, y, 4, 1, 1);
+			create_bubble(x, y, 12, 2, 2);
 			stepCounter = 0;
 		}
 	} else {
@@ -74,5 +67,16 @@ if(!runBulletTimer){
 		runBulletTimer = false;
 	} else {
 		bulletTimer++;
+	}
+}
+
+if(enemyHealth <= 0){
+	instance_destroy();
+}
+
+for(var i = ds_list_size(bullets) - 1; i >= 0; i--){
+	if(bullets[|i].hit){
+		instance_destroy(bullets[|i]);
+		ds_list_delete(bullets,i);
 	}
 }

@@ -11,6 +11,20 @@ if (place_meeting(x + hspd, y + vspd, obj_wall)){
 	hspd = 0;
 	vspd = 0;
 }
+if(!enemy){
+	if (place_meeting(x + hspd, y + vspd, obj_testEnemy)){
+		hit = true;
+		hitEnemy = instance_place(x + hspd, y + vspd, obj_testEnemy);
+		hitEnemy.enemyHealth -= damage;
+		while(!place_meeting(x + hspd/spd, y + vspd/spd, obj_testEnemy)){
+			x += hspd/spd;
+			y += vspd/spd;
+		}
+		create_bubble(x,y,15,1,2);
+		hspd = 0;
+		vspd = 0;
+	}
+}
 
 if(!firstFrame){
 	x += hspd;

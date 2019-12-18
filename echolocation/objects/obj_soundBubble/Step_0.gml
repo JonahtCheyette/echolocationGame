@@ -1,7 +1,15 @@
 /// @description change the size of the circle
 if(growing){
 	if(size < maxSize){
-		size += growSpeed;
+		if(size + growSpeed > maxSize){
+			size = maxSize;
+			growing = false;
+		} else if (size + growSpeed == maxSize) {
+			size += growSpeed;
+			growing = false;
+		} else {
+			size += growSpeed;
+		}
 	} else {
 		growing = false;
 	}
