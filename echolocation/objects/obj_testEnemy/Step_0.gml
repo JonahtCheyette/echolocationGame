@@ -2,38 +2,10 @@
 if(!runBulletTimer){
 	targetDir = point_direction(x, y, obj_player.x, obj_player.y);
 	if(dir != targetDir){
-		if(dir < targetDir){
-			if(abs(dir - targetDir) < 180){
-				if(abs(dir - targetDir) < turnSpeed){
-					dir = targetDir;
-					show_debug_message("hello")
-				} else {
-					dir += turnSpeed;
-				}
-			} else {
-				if(abs(dir - targetDir) >= 360 - turnSpeed){
-					dir = targetDir;
-					show_debug_message("helloAgain")
-				} else {
-					dir -= turnSpeed;
-				}
-			}
+		if(abs(angle_difference(dir, targetDir)) < turnSpeed){
+			dir = targetDir;
 		} else {
-			if(abs(dir - targetDir) < 180){
-				if(abs(dir - targetDir) < turnSpeed){
-					dir = targetDir;
-					show_debug_message("IHaveTheHighGround")
-				} else {
-					dir -= turnSpeed;
-				}
-			} else {
-				if(abs(dir - targetDir) >= 360 - turnSpeed){
-					dir = targetDir;
-					show_debug_message("YouUnderestimateMyPower")
-				} else {
-					dir += turnSpeed;
-				}
-			}
+			dir -= sign(angle_difference(dir, targetDir)) * turnSpeed;
 		}
 	}
 
