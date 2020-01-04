@@ -12,3 +12,6 @@ health = maxHealth;
 sprite_index = spr_player;
 image_xscale = 3/200;
 image_yscale = 3/200;
+knockbackX = 0;
+knockbackY = 0;
+invincibilityFrames = 0;
