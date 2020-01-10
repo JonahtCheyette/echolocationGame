@@ -1,11 +1,12 @@
 /// @description drawing yourself
 gpu_set_blendmode_ext(bm_dest_alpha, bm_zero);
 draw_set_color(c_white);
-draw_circle(x - 1,y - 1,7.5,1);
+draw_circle(x - 1, y - 1,7.5,1);
 if(invincibilityFrames > 0){
-	
-} else {
-	
+	draw_set_color(c_black);
+	gpu_set_blendmode(bm_normal);
+	draw_set_alpha((invincibilityFrames%20)/20);
+	draw_circle(x - 1,y - 1,7.5,1);
 }
 gpu_set_blendmode_ext(bm_inv_dest_alpha, bm_one);
 draw_self();

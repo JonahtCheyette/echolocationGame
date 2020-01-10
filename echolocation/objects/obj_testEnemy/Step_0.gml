@@ -56,15 +56,21 @@ if(!runBulletTimer){
 		stepCounter = 0;
 	}
 	
-	if(abs(targetDir - dir) < coneOfVision){
-		runBulletTimer = true;
-		bulletTimer = 0;
+	if(shotCooldown <= 0){
+		if(abs(targetDir - dir) < coneOfVision){
+			runBulletTimer = true;
+			bulletTimer = 0;
+		}
+	} else {
+		shotCooldown--;
 	}
+	
 } else {
 	if(bulletTimer == bulletTimerMax){
 		event_user(0);
 		bulletTimer = 0;
 		runBulletTimer = false;
+		shotCooldown = shotCooldownMax;
 	} else {
 		bulletTimer++;
 	}
