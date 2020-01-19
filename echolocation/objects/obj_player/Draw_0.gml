@@ -7,6 +7,7 @@ if(invincibilityFrames > 0){
 	gpu_set_blendmode(bm_normal);
 	draw_set_alpha((invincibilityFrames%20)/20);
 	draw_circle(x - 1,y - 1,7.5,1);
+	draw_set_alpha(1);
 }
 gpu_set_blendmode_ext(bm_inv_dest_alpha, bm_one);
 draw_self();
