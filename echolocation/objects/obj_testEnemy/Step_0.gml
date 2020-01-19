@@ -9,42 +9,7 @@ if(!runBulletTimer){
 		}
 	}
 
-	//get the speed variables
-	hspd = lengthdir_x(spd, dir);
-	vspd = lengthdir_y(spd, dir);
-
-	// collisions
-	if (place_meeting(x + hspd, y, obj_wall)){
-		while(!place_meeting(x + sign(hspd), y, obj_wall)){
-			x += sign(hspd);
-		}
-		hspd = 0;
-	}
-
-	if (place_meeting(x, y + vspd, obj_wall)){
-		while(!place_meeting(x, y + sign(vspd), obj_wall)){
-			y += sign(vspd);
-		}
-		vspd = 0;
-	}
-
-	if (place_meeting(x + hspd, y, obj_player)){
-		while(!place_meeting(x + sign(hspd), y, obj_player)){
-			x += sign(hspd);
-		}
-		hspd = 0;
-	}
-
-	x += hspd;
-
-	if (place_meeting(x, y + vspd, obj_player)){
-		while(!place_meeting(x, y + sign(vspd), obj_player)){
-			y += sign(vspd);
-		}
-		vspd = 0;
-	}
-
-	y += vspd;
+	event_inherited();
 
 	if(!(vspd == 0 && hspd == 0)){
 		stepCounter++;

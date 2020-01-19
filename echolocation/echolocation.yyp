@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "42ea3ced-9624-449e-87d1-a4ecab94a241",
+            "Value": {
+                "id": "399ffc8b-9581-43ee-8ef2-5fb00a432ced",
+                "resourcePath": "objects\\obj_immobile\\obj_immobile.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4b5af8a0-67cf-4253-a0f2-af21a4b96c95",
             "Value": {
                 "id": "df3331ac-35e4-4aa3-8def-aeaf85c24e1e",
@@ -346,7 +354,7 @@
             "Key": "fb8daa67-d9de-4abe-a320-a405c3146193",
             "Value": {
                 "id": "4a053a05-4101-4122-a971-0fcc82e9e519",
-                "resourcePath": "objects\\obj_collidable\\obj_collidable.yy",
+                "resourcePath": "objects\\obj_moves\\obj_moves.yy",
                 "resourceType": "GMObject"
             }
         }
