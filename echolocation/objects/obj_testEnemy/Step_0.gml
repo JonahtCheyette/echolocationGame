@@ -32,7 +32,7 @@ if(!runBulletTimer){
 	
 } else {
 	if(bulletTimer == bulletTimerMax){
-		event_user(0);
+		shoot(targetDir, x + lengthdir_x(7.5, targetDir), y + lengthdir_y(7.5, targetDir), true);
 		bulletTimer = 0;
 		runBulletTimer = false;
 		shotCooldown = shotCooldownMax;
@@ -43,11 +43,4 @@ if(!runBulletTimer){
 
 if(enemyHealth <= 0){
 	instance_destroy();
-}
-
-for(var i = ds_list_size(bullets) - 1; i >= 0; i--){
-	if(bullets[|i].hit){
-		instance_destroy(bullets[|i]);
-		ds_list_delete(bullets,i);
-	}
 }

@@ -36,7 +36,7 @@ gpu_set_colorwriteenable(true,true,true,true);
 mx = mouse_x - x;
 my = mouse_y - y;
 
-pointer_rotation = point_direction(x, y, mouse_x, mouse_y);
+pointerRotation = point_direction(x, y, mouse_x, mouse_y);
 
 mLen = point_distance(x, y, mouse_x, mouse_y);
 
@@ -49,4 +49,4 @@ my *= 50;
 mx += x;
 my += y;
 
-draw_sprite_ext(spr_pointer, 0, mx, my, 0.5, 0.5, pointer_rotation + 45, c_white, 1);
+draw_sprite_ext(spr_pointer, 0, mx, my, 0.5, 0.5, pointerRotation + 45, c_white, 1);

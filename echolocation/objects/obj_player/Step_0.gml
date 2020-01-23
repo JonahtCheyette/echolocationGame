@@ -12,13 +12,6 @@ if((xaxis == 0) && (yaxis == 0)){
 
 event_inherited();
 
-for(var i = ds_list_size(bullets) - 1; i >= 0; i--){
-	if(bullets[|i].hit){
-		instance_destroy(bullets[|i]);
-		ds_list_delete(bullets,i);
-	}
-}
-
 if(!(vspd == 0 && hspd == 0)){
 	stepCounter++;
 	if(stepCounter == stepMax){

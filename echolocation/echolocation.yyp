@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "37fd1957-1072-442c-8e31-9b29585e6c02",
+            "Value": {
+                "id": "9a7d3232-84cb-46ec-bdf3-4acbed13212c",
+                "resourcePath": "objects\\obj_bulletHandler\\obj_bulletHandler.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3b1df4c3-3de8-4a67-b4a3-278bfd79030b",
             "Value": {
                 "id": "cb86b814-10d5-4597-aaa9-e964afb4fece",
@@ -303,6 +311,14 @@
             }
         },
         {
+            "Key": "a95d915c-37e5-4e60-bf0c-1a652ceddb88",
+            "Value": {
+                "id": "0864b475-8d25-474b-9685-366ef9da2ff6",
+                "resourcePath": "scripts\\shoot\\shoot.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a9f99e9b-f3ea-45c8-81cd-8e3ee988c4e8",
             "Value": {
                 "id": "f02bbbd0-e208-436f-a4c7-0b838f483f6c",
@@ -468,7 +484,8 @@
         "1db27cd3-c199-4749-bd43-ae46851e1c3b",
         "f8246fa1-4849-4902-a656-a9f724427fc8",
         "b38d3cbb-a65d-4eed-a1b8-0965e20f085f",
-        "6fcda94e-f4d0-4cae-b1d6-4089e1949f96"
+        "6fcda94e-f4d0-4cae-b1d6-4089e1949f96",
+        "a95d915c-37e5-4e60-bf0c-1a652ceddb88"
     ],
     "tutorial": ""
 }
