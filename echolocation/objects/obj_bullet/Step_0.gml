@@ -1,9 +1,9 @@
 /// @description move the bullet, create sound bubbles
 
 // collisions
-if (place_meeting(x + hspd, y + vspd, obj_wall)){
+if (place_meeting(x + hspd, y + vspd, obj_immobile)){
 	hit = true;
-	while(!place_meeting(x + hspd/spd, y + vspd/spd, obj_wall)){
+	while(!place_meeting(x + hspd/spd, y + vspd/spd, obj_immobile)){
 		x += hspd/spd;
 		y += vspd/spd;
 	}
