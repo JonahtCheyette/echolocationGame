@@ -7,10 +7,11 @@ if (place_meeting(x + hspd, y + vspd, obj_immobile)){
 		x += hspd/spd;
 		y += vspd/spd;
 	}
-	create_bubble(x,y,15,1,2);
+	create_bubble(x,y,35,9,2);
 	hspd = 0;
 	vspd = 0;
 }
+
 if(!enemy){
 	if (place_meeting(x + hspd, y + vspd, obj_testEnemy)){
 		hit = true;
@@ -20,7 +21,7 @@ if(!enemy){
 			x += hspd/spd;
 			y += vspd/spd;
 		}
-		create_bubble(x,y,15,1,2);
+		create_bubble(x,y,35,9,2);
 		hspd = 0;
 		vspd = 0;
 	}
@@ -33,7 +34,7 @@ if(!enemy){
 			x += hspd/spd;
 			y += vspd/spd;
 		}
-		create_bubble(x,y,15,1,2);
+		create_bubble(x,y,35,9,2);
 		hspd = 0;
 		vspd = 0;
 	}
@@ -47,7 +48,7 @@ if(!firstFrame){
 }
 
 if(!hit){
-	create_bubble(x + hspd/2, y + vspd/2,6,2,3);
+	create_bubble(x + hspd/2, y + vspd/2,9,2,3);
 }
 
 if(x > room_width || y > room_height || x < 0 || y < 0){
