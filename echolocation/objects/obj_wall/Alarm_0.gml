@@ -1,6 +1,6 @@
 /// @description find the sections that overlap with other walls
 for(var i = 0; i < instance_number(obj_wall); i++){
-	instance = instance_find(obj_wall, i);
+	var instance = instance_find(obj_wall, i);
 	if(instance != id){
 		with(instance){
 			if(other.y <= y + sprite_height && other.y + other.sprite_height >= y){

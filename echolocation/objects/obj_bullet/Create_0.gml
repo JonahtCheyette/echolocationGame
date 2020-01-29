@@ -6,5 +6,5 @@ hit = false;
 image_xscale = 1/32;
 image_yscale = 1/32;
 firstFrame = true;
-create_bubble(x, y, 55, 6, 1);
+create_bubble(x, y, 55, 6, 1, 25);
 damage = 25;

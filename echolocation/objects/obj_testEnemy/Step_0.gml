@@ -10,7 +10,7 @@ if(myPath != undefined){
 		stepCounter++;
 		if(stepCounter == stepMax){
 			stepCounter = 0;
-			create_bubble(x, y, 20,5,1);
+			create_bubble(x, y, 20, 5, 1, 0);
 		}
 	}
 	if(distance_to_object(obj_player) <= 200){
