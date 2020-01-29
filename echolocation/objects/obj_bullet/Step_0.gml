@@ -29,7 +29,7 @@ if(!enemy){
 	if (place_meeting(x + hspd, y + vspd, obj_player)){
 		hit = true;
 		hitEnemy = instance_place(x + hspd, y + vspd, obj_player);
-		health -= damage;
+		player_damage(damage);
 		while(!place_meeting(x + hspd/spd, y + vspd/spd, obj_player)){
 			x += hspd/spd;
 			y += vspd/spd;

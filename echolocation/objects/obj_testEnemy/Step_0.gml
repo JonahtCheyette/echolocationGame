@@ -1,5 +1,5 @@
 /// @description Insert description here
-if(instance_exists(obj_player) && (distance_to_object(obj_player) > 150 || collision_line(x,y,obj_player.x,obj_player.y,obj_immobile,true,false))){
+if(instance_exists(obj_player) && (distance_to_object(obj_player) > 180 || collision_line(x,y,obj_player.x,obj_player.y,obj_immobile,true,false))){
 	myPath = path_add();
 	mp_grid_path(pathfindingGrid, myPath, x, y, obj_player.x, obj_player.y, true);
 	path_start(myPath, 1.5, path_action_stop, true);

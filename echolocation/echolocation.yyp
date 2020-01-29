@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "035c5a0f-ff2a-4427-92ea-d562c9b6336b",
+            "Value": {
+                "id": "00b987d8-fc1c-410e-a3f3-a43e94878a26",
+                "resourcePath": "scripts\\player_damage\\player_damage.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "059ad3ed-be84-4e9f-8a12-c93537b2be83",
             "Value": {
                 "id": "b24bf1a4-4659-4680-bd5f-9686a02191ca",
@@ -645,7 +653,8 @@
         "f8246fa1-4849-4902-a656-a9f724427fc8",
         "b38d3cbb-a65d-4eed-a1b8-0965e20f085f",
         "6fcda94e-f4d0-4cae-b1d6-4089e1949f96",
-        "a95d915c-37e5-4e60-bf0c-1a652ceddb88"
+        "a95d915c-37e5-4e60-bf0c-1a652ceddb88",
+        "035c5a0f-ff2a-4427-92ea-d562c9b6336b"
     ],
     "tutorial": ""
 }
