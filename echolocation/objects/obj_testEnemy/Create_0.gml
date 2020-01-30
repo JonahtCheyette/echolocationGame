@@ -12,6 +12,7 @@ shotCountdown = -1;
 myPath = undefined;
 suspicion = 0;
 alerted = false;
+chasing = false;
 goal = array_create(2);
 homebase = array_create(2, x);
 homebase[1] = y;

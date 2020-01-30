@@ -1,7 +1,7 @@
 /// @description declare bubble array
 bubbles = ds_list_create();
 
-//create_bubble(1000,1000,10000000,100000,0)
+create_bubble(1000,1000,10000000,100000,0, 0);
 
 enum bubbleDrawModes {
 	REGULAR,
