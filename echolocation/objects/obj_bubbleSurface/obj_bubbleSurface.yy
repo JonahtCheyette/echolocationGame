@@ -5,16 +5,6 @@
     "name": "obj_bubbleSurface",
     "eventList": [
         {
-            "id": "73a9e264-24a0-4d90-ab99-651181157875",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "cec784ba-61e0-44dd-85e0-38a0e850f273"
-        },
-        {
             "id": "c0159e80-fe5c-48a4-8925-b716afbee3be",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -42,6 +32,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 72,
             "eventtype": 8,
+            "m_owner": "cec784ba-61e0-44dd-85e0-38a0e850f273"
+        },
+        {
+            "id": "7f3b1b18-b2fd-481b-8836-0b60f36586c4",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
             "m_owner": "cec784ba-61e0-44dd-85e0-38a0e850f273"
         }
     ],

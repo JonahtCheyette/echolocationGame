@@ -21,7 +21,7 @@ draw_self();
 if(invincibilityFrames > 0){
 	draw_set_color(c_black);
 	draw_set_alpha((invincibilityFrames%20)/20);
-	draw_circle(x - 1,y - 1,7.5,false);
+	//draw_circle(x - 1,y - 1,7.5,false);
 	draw_set_alpha(1);
 }
 

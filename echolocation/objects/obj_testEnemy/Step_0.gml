@@ -1,32 +1,32 @@
-/// @description Insert description here
-if(chasing){
-	myPath = path_add();
-	if(instance_exists(obj_player) && (distance_to_object(obj_player) > 180 || collision_line(x,y,obj_player.x,obj_player.y,obj_immobile,true,false))){
-		mp_grid_path(pathfindingGrid, myPath, x, y, obj_player.x, obj_player.y, true);
-		path_start(myPath, 1.5, path_action_stop, true);
-	}
-} else if (x != homebase[0] && y != homebase[1]){
-	myPath = path_add();
-	mp_grid_path(pathfindingGrid, myPath, x, y, homebase[0], homebase[1], true);
-	path_start(myPath, 1.5, path_action_stop, true);
+/// @description pathfinding
+
+if(abs(suspicion) > 1){
+	suspicion = sign(suspicion);
+} else {
+	suspicion -= 0.0001;
 }
 
-if(myPath != undefined){
-	if(path_get_speed(myPath,path_position) != 0){
-		stepCounter++;
-		if(stepCounter == stepMax){
-			stepCounter = 0;
-			create_bubble(x, y, 20, 5, 1, 0);
+//do pathing here
+
+if(x != xprevious || y != yprevious){
+	//isn't moving
+	stepCounter++;
+	if(stepCounter == stepMax){
+		stepCounter = 0;
+		create_bubble(x, y, 20, 5, 1, 0);
+	}
+} else {
+	stepCounter = 0;
+	if(alerted){
+		if(abs(x - goal[0]) <= 5 && abs(y - goal[1]) <= 5){
+			alerted = false;
 		}
 	}
-	if(distance_to_object(obj_player) <= 200){
-		if(collision_line(x,y,obj_player.x, obj_player.y, obj_immobile, true, false) < 100000 && shotCountdown < -25){
-			beginShot = true;
-			path_speed = 0;
-			chasing = true;
-			suspicion = 1;
-			alerted = true;
-		}
+}
+
+if(distance_to_object(obj_player) <= 200){
+	if(collision_line(x,y,obj_player.x, obj_player.y, obj_immobile, true, false) < 100000 && shotCountdown < -25){
+		//spotted the player
 	}
 }
 

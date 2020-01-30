@@ -8,11 +8,8 @@
 /// @param suspicionValue how likely the guard is to care about the sound
 /// @param bubble_draw_mode the mode the outline is drawn in
 
+create_bubble(argument0, argument1, argument2, argument3, argument4, argument5);
+
 with(obj_bubbleHandler){
-	ds_list_add(bubbles,instance_create_layer(argument0,argument1,"Bubbles",obj_soundBubble));
-	bubbles[|ds_list_size(bubbles) - 1].maxSize = argument2;
-	bubbles[|ds_list_size(bubbles) - 1].growSpeed = argument3;
-	bubbles[|ds_list_size(bubbles) - 1].shrinkSpeed = argument4;
-	bubbles[|ds_list_size(bubbles) - 1].suspicionValue = argument5;
 	bubbles[|ds_list_size(bubbles) - 1].drawMode = argument6;
 }
