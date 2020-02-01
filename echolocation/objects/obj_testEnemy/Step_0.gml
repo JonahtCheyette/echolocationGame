@@ -17,11 +17,13 @@ if(x != xprevious || y != yprevious){
 	}
 } else {
 	stepCounter = 0;
+	/*
 	if(alerted){
 		if(abs(x - goal[0]) <= 5 && abs(y - goal[1]) <= 5){
 			alerted = false;
 		}
 	}
+	*/
 }
 
 if(distance_to_object(obj_player) <= 200){

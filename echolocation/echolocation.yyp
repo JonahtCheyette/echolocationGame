@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "02ca09ae-1926-4ff7-b738-48ed6598376d",
+            "Value": {
+                "id": "652defb2-7ce9-4dfa-98d7-9910da1d4d7d",
+                "resourcePath": "sprites\\spr_playerInvincibility\\spr_playerInvincibility.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "035c5a0f-ff2a-4427-92ea-d562c9b6336b",
             "Value": {
                 "id": "00b987d8-fc1c-410e-a3f3-a43e94878a26",
@@ -82,7 +90,7 @@
             "Key": "0aa1f20d-45ee-4bb1-918a-4612db1f0c8b",
             "Value": {
                 "id": "3e4a4c09-5240-47d6-9494-d382e9e14d35",
-                "resourcePath": "sprites\\spr_playerStart\\spr_playerStart.yy",
+                "resourcePath": "sprites\\spr_player\\spr_player.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -100,6 +108,14 @@
                 "id": "dd3c5d3a-5e56-4036-b713-36be8b0fbed5",
                 "resourcePath": "sprites\\spr_crate2\\spr_crate2.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "1451e5fb-887f-4f52-a208-1a03cefbcf53",
+            "Value": {
+                "id": "3e91ed22-5f71-4f67-9845-1901efa89ada",
+                "resourcePath": "scripts\\create_borders\\create_borders.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -162,7 +178,7 @@
             "Key": "2ba550bd-3a0e-4e40-8ebd-d4da37367b9a",
             "Value": {
                 "id": "9735a6e7-b695-46c1-a470-9f53c2e578c9",
-                "resourcePath": "sprites\\spr_playerStandOutline\\spr_playerStandOutline.yy",
+                "resourcePath": "sprites\\spr_playerOutline\\spr_playerOutline.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -258,7 +274,7 @@
             "Key": "66073c13-78d6-462a-bd74-276dafab1967",
             "Value": {
                 "id": "b71f362e-f798-4a46-a01b-4c345ca0deb4",
-                "resourcePath": "sprites\\spr_player\\spr_player.yy",
+                "resourcePath": "sprites\\spr_playerWalking\\spr_playerWalking.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -575,6 +591,22 @@
             }
         },
         {
+            "Key": "d08aa108-f520-47c0-836d-eb44054a1bcb",
+            "Value": {
+                "id": "80300d1f-2d13-4690-b85a-7f0e45930146",
+                "resourcePath": "sprites\\spr_playerOutlineWalking\\spr_playerOutlineWalking.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "de18cf62-3950-4216-9c94-0f9da7dc664e",
+            "Value": {
+                "id": "0907ea7a-adf3-432a-9100-a7386d64da69",
+                "resourcePath": "sprites\\spr_playerInvincibilityWalking\\spr_playerInvincibilityWalking.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e2fe19ef-c6c7-4e72-aa84-a4f4f3b9d026",
             "Value": {
                 "id": "75a72fb5-c504-494d-907e-0b606b17190c",
@@ -663,7 +695,8 @@
         "6fcda94e-f4d0-4cae-b1d6-4089e1949f96",
         "035c5a0f-ff2a-4427-92ea-d562c9b6336b",
         "a95d915c-37e5-4e60-bf0c-1a652ceddb88",
-        "18c98489-8d1e-4f11-a587-cfedb6e59bf6"
+        "18c98489-8d1e-4f11-a587-cfedb6e59bf6",
+        "1451e5fb-887f-4f52-a208-1a03cefbcf53"
     ],
     "tutorial": ""
 }

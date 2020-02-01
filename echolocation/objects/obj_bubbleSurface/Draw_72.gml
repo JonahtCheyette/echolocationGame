@@ -1,9 +1,7 @@
 /// @description clear the surface
 if(!surface_exists(surface)){
-	surface = surface_create(room_width, room_height);
+	surface = surface_create(camera_get_view_width(view_camera[0]), camera_get_view_height(view_camera[0]));
 }
-if(surface_exists(surface)){
-	surface_set_target(surface);
-	draw_clear(make_color_rgb(0,0,60));
-	surface_reset_target();
-}
+surface_set_target(surface);
+draw_clear(make_color_rgb(0,0,60));
+surface_reset_target();

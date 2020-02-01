@@ -1,5 +1,5 @@
 /// @desc initialize
-spd = 1;
+spd = 80;
 hspd = 0;
 vspd = 0;
 dir = 0;
@@ -7,9 +7,10 @@ stepCounter = 0;
 stepMax = 25;
 maxHealth = 100;
 health = maxHealth;
-sprite_index = spr_player;
-image_xscale = 3/200;
-image_yscale = 3/200;
+image_xscale = 0.5;
+image_yscale = image_xscale;
 knockbackX = 0;
 knockbackY = 0;
 invincibilityFrames = 0;
+outlineSprite = spr_playerOutline;
+pointerRotation = 0;

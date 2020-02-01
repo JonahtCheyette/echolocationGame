@@ -32,11 +32,11 @@ if(!enemy){
 }
 
 if(hit){
-	create_bubble(x, y, 35, 9, 2, 10);
+	create_bubble(x, y, 70, 9, 2, 10);
 	hspd = 0;
 	vspd = 0;
 } else {
-	create_bubble(x + hspd/2, y + vspd/2, 9, 2, 3, 25);
+	create_bubble(x + hspd/2, y + vspd/2, 18, 2, 3, 25);
 }
 
 if(!firstFrame){

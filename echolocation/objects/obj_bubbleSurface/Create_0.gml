@@ -1,2 +1,2 @@
 /// @description create the surface
-surface = surface_create(room_width, room_height);
+surface = 1490384901832908498;

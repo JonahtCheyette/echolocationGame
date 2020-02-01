@@ -7,7 +7,15 @@ dir = point_direction(0, 0, xaxis, yaxis);
 if((xaxis == 0) && (yaxis == 0)){
 	spd = 0;
 } else {
-	spd = 1;
+	spd = 8;
+}
+
+if(spd == 8){
+	sprite_index = spr_playerWalking;
+	outlineSprite = spr_playerOutlineWalking;
+} else {
+	sprite_index = spr_player;
+	outlineSprite = spr_playerOutline;
 }
 
 event_inherited();
