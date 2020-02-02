@@ -7,9 +7,14 @@ if(abs(suspicion) > 1){
 }
 
 //do pathing here
+if(x - goal[0] <= 20 && y - goal[1] <= 20){
+	myPath = path_add();
+	mp_grid_path(pathfindingGrid, myPath, x, y, goal[0], goal[1], true);
+	path_start(myPath, 1, path_action_stop, true);
+}
 
 if(x != xprevious || y != yprevious){
-	//isn't moving
+	//is moving
 	stepCounter++;
 	if(stepCounter == stepMax){
 		stepCounter = 0;
@@ -44,6 +49,8 @@ if(shotCountdown == 0){
 }
 
 if(enemyHealth <= 0){
-	path_delete(myPath);
+	if(myPath != undefined){
+		path_delete(myPath);
+	}
 	instance_destroy();
 }
