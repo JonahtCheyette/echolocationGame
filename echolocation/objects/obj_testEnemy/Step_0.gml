@@ -31,7 +31,7 @@ if(x != xprevious || y != yprevious){
 	stepCounter++;
 	if(stepCounter == stepMax){
 		stepCounter = 0;
-		create_bubble(x, y, 20, 5, 1, 0);
+		create_bubble(x, y, 25, 5, 1, 0);
 	}
 	dir = direction;
 } else {

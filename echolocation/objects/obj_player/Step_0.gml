@@ -23,7 +23,7 @@ event_inherited();
 if(!(vspd == 0 && hspd == 0)){
 	stepCounter++;
 	if(stepCounter == stepMax){
-		create_bubble(x, y, 20, 3, 1, 3);
+		create_bubble(x, y, 25, 3, 1, 3);
 		stepCounter = 0;
 	}
 } else {
