@@ -22,7 +22,7 @@ if (place_meeting(x + hspd, y, obj_immobile)){
 
 if(object_index == obj_player){
 	if (place_meeting(x + hspd, y, obj_moves)){
-		player_damage_knockback(instance_place(x + sign(hspd), y, obj_moves), 100);
+		player_damage_knockback(instance_place(x + sign(hspd), y, obj_moves), 10);
 	}
 }
 

@@ -1,8 +1,4 @@
 /// @description Initializing everything
-spd = 1;
-hspd = 0;
-vspd = 0;
-dir = 0;
 stepCounter = 0;
 stepMax = 25;
 maxHealth = 50;
@@ -13,4 +9,10 @@ suspicion = 0;
 homebase = array_create(2, x);
 homebase[1] = y;
 goal = array_create(2);
+array_copy(goal, 0, homebase, 0, 2);
 myPath = undefined;
+soundSize = 0;
+chasing = false;
+dir = 90;
+spd = 8;
+curiosityTimer = -1;
