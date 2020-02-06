@@ -1,10 +1,11 @@
 /// @description pathfinding
-
 if(abs(suspicion) > 1){
 	suspicion = sign(suspicion);
 } else {
 	suspicion -= 0.0001;
 }
+
+image_angle = dir;
 
 if(chasing){
 	goal = find_closest_unoccupied_cell(pathfindingGrid, obj_player.x, obj_player.y, 5);
@@ -26,6 +27,12 @@ if(abs(x - goal[0]) >= 2 && abs(y - goal[1]) >= 2){
 	path_start(myPath, spd, path_action_stop, true);
 }
 
+
+//if at home
+if(abs(x - homebase[0]) <= 2 && abs(y - homebase[1]) <= 2){
+	dir = homeDir;
+}
+
 if(x != xprevious || y != yprevious){
 	//is moving
 	stepCounter++;
@@ -44,7 +51,12 @@ if(x != xprevious || y != yprevious){
 			chasing = false;
 			soundSize = 0;
 		}
-		dir = 90;
+	}
+}
+
+if(chasing){
+	if(collision_line(x,y,obj_player.x, obj_player.y, obj_immobile, true, false) < 100000){
+		dir = point_direction(x, y, goal[0], goal[1]);
 	}
 }
 

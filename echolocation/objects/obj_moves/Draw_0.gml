@@ -7,7 +7,7 @@ draw_set_alpha(0);
 var cX = x - sprite_xoffset + sprite_width/2;
 var cY = y - sprite_yoffset + sprite_height/2;
 var angle = point_direction(cX, cY, x - sprite_xoffset, y - sprite_yoffset);
-var radius = point_distance(cX, cY, x - sprite_xoffset, y - sprite_yoffset);
+var radius = point_distance(cX, cY, x - sprite_xoffset, y - sprite_yoffset) * 1.1;
 var xValues = array_create(4);
 var yValues = array_create(4);
 //topRight

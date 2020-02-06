@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_immobile",
     "eventList": [
-        
+        {
+            "id": "2b460429-ae43-44a6-a3e5-c5cb63bf4e02",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 10,
+            "eventtype": 7,
+            "m_owner": "42ea3ced-9624-449e-87d1-a4ecab94a241"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
