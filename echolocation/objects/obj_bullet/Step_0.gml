@@ -2,10 +2,12 @@
 
 // collisions
 if (place_meeting(x + hspd, y + vspd, obj_immobile)){
-	hit = true;
-	while(!place_meeting(x + hspd/spd, y + vspd/spd, obj_immobile)){
-		x += hspd/spd;
-		y += vspd/spd;
+	if(!place_meeting(x + hspd, y + vspd, obj_table)){
+		hit = true;
+		while(!place_meeting(x + hspd/spd, y + vspd/spd, obj_immobile)){
+			x += hspd/spd;
+			y += vspd/spd;
+		}
 	}
 }
 

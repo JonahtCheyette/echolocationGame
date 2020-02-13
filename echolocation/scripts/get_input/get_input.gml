@@ -15,8 +15,3 @@ if(gamepad_is_connected(0)){
 	xaxis = max(gamepad_axis_value(0, gp_axislh), gamepad_axis_value(0, gp_axisrh), rKey - lKey, 0);
 	yaxis = max(gamepad_axis_value(0, gp_axislv), gamepad_axis_value(0, gp_axisrv), dKey - uKey, 0);
 }
-
-//check fullscreen toggle
-if(keyboard_check_released(vk_f4)){
-	window_set_fullscreen(!window_get_fullscreen());
-}

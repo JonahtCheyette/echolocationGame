@@ -9,6 +9,12 @@ image_angle = dir;
 
 if(chasing){
 	goal = find_closest_unoccupied_cell(pathfindingGrid, obj_player.x, obj_player.y, 5);
+	if(!goingToAlarm && ! permanentlyAlarmed){
+		with(collision_circle(x, y, 800, obj_alarm, false, true)){
+			other.goingToAlarm = true;
+			other.goal = find_closest_unoccupied_cell(pathfindingGrid, x, y, 5);
+		}
+	}
 	suspicion = 1;
 }
 
@@ -51,11 +57,19 @@ if(x != xprevious || y != yprevious){
 			chasing = false;
 			soundSize = 0;
 		}
+		if(goingToAlarm){
+			goingToAlarm = false;
+			if(collision_line(x,y, goal[0], goal[1], obj_wall, true, false) < 100000){
+				with(collision_circle(x, y, 100, obj_alarm, false, true)){
+					event_user(0);
+				}
+			}
+		}
 	}
 }
 
 if(chasing){
-	if(collision_line(x,y,obj_player.x, obj_player.y, obj_immobile, true, false) < 100000){
+	if(collision_line(x,y,goal[0], goal[1], obj_immobile, true, false) < 100000){
 		dir = point_direction(x, y, goal[0], goal[1]);
 	}
 }

@@ -3,6 +3,8 @@ pushed = false;
 pushedDir = 0;
 animationCounter = 0;
 pushSpeed = 10;
+papers = ds_list_create();
+alarm[0] = 1;
 //topleft
 legBottoms[0, 0] = x + 5;
 legBottoms[0, 1] = y + 5;

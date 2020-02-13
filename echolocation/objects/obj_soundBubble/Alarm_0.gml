@@ -6,7 +6,7 @@ with(obj_testEnemy){
 		if(other.suspicionValue > 0){
 			point = find_closest_unoccupied_cell(pathfindingGrid, other.x, other.y, 5);
 			if(((goal[0] == homebase[0] && goal[1] == homebase[1]) || other.maxSize > soundSize) && !chasing){
-				if(suspicion >= random(1)){
+				if(suspicion >= random(1) || permanentlyAlarmed){
 					soundSize = other.maxSize;
 					array_copy(goal, 0, point, 0, 2);
 				}

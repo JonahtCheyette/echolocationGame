@@ -3,7 +3,7 @@
 //legs
 if(pushed){
 	for(var i = 0; i < array_height_2d(legBottoms); i++){
-		draw_sprite_ext(spr_tableLeg, 0, legBottoms[i, 0], legBottoms[i, 1], 2, (animationCounter + 1) * lengthdir_y(pushSpeed, pushedDir - 90) / (sprite_get_height(spr_tableLeg)), pushedDir + 90, c_white, 1);
+		draw_sprite_ext(spr_tableLeg, 0, legBottoms[i, 0], legBottoms[i, 1], 2, pushSpeed * (animationCounter + 1)/ sprite_get_height(spr_tableLeg), pushedDir - 90, c_white, 1);
 	}
 }
 
