@@ -13,7 +13,8 @@
         "8655d2f3-e8a5-48c1-a778-2e94a8770714",
         "4786d4ee-56c1-423c-b4e4-22fbb4bb3579",
         "94e27658-9b8d-4885-a45f-58b693986967",
-        "72d491be-8f4c-4d44-baad-841ffb2c4604"
+        "72d491be-8f4c-4d44-baad-841ffb2c4604",
+        "47528612-c52c-4270-95d4-77dd7fcbefb8"
     ],
     "filterType": "GMObject",
     "folderName": "obstacles",

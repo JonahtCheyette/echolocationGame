@@ -1,9 +1,12 @@
 /// @description temporary
 with(obj_testEnemy){
 	chasing = false;
-	alerted = false;
-	suspicion = false;
+	suspicion = 0;
 }
-with(collision_line(x, y, x + lengthdir_x(50, pointerRotation), y + lengthdir_y(50, pointerRotation), obj_immobile, true, false)){
-	event_user(0);
+var interactables = ds_list_create();
+collision_line_list(x, y, x + lengthdir_x(50, pointerRotation), y + lengthdir_y(50, pointerRotation), obj_immobile, true, false, interactables, true);
+if(ds_list_size(interactables) > 0){
+	with(interactables[|0]){
+		event_user(0);
+	}
 }

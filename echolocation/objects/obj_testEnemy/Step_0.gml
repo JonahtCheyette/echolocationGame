@@ -59,7 +59,7 @@ if(x != xprevious || y != yprevious){
 		}
 		if(goingToAlarm){
 			goingToAlarm = false;
-			if(collision_line(x,y, goal[0], goal[1], obj_wall, true, false) < 100000){
+			if(collision_line(x,y, goal[0], goal[1], obj_blocksSight, true, false) < 100000){
 				with(collision_circle(x, y, 100, obj_alarm, false, true)){
 					event_user(0);
 				}
@@ -76,16 +76,16 @@ if(chasing){
 
 //spotted the player
 if(distance_to_object(obj_player) <= 400 && angle_difference(dir, point_direction(x, y, obj_player.x, obj_player.y)) < 15){
-	if(collision_line(x,y,obj_player.x, obj_player.y, obj_immobile, true, false) < 100000){
+	if(collision_line(x,y,obj_player.x, obj_player.y, obj_blocksSight, true, false) < 100000){
 		chasing = true;
 	}
 }
 
 if(chasing){
-	if(distance_to_object(obj_player) <= 250 && collision_line(x,y,obj_player.x, obj_player.y, obj_immobile, true, false) < 100000 && shotCountdown < -25){
+	if(distance_to_object(obj_player) <= 250 && collision_line(x,y,obj_player.x, obj_player.y, obj_blocksSight, true, false) < 100000 && shotCountdown < -25){
 		beginShot = true;
 	}
-	if((distance_to_object(obj_player) >= 600 && collision_line(x,y,obj_player.x, obj_player.y, obj_immobile, true, false) >= 100000) || distance_to_object(obj_player) >= 1000){
+	if((distance_to_object(obj_player) >= 600 && collision_line(x,y,obj_player.x, obj_player.y, obj_blocksSight, true, false) >= 100000) || distance_to_object(obj_player) >= 1000){
 		curiosityTimer = 200;
 	}
 	if(curiosityTimer == 0){
