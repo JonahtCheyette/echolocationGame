@@ -303,6 +303,14 @@
             }
         },
         {
+            "Key": "4c0dac0a-b431-49ad-a7ec-2d4db4f24f30",
+            "Value": {
+                "id": "5e4ec54b-095a-419c-96da-b5e0d98ea1e2",
+                "resourcePath": "objects\\obj_blocksMovement\\obj_blocksMovement.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "50502d46-47f6-4a5a-819a-58a731ef7ddb",
             "Value": {
                 "id": "8344aadc-e575-4b21-b551-71b0307ed35e",

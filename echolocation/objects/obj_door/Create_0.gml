@@ -1,4 +1,7 @@
 /// @description initialize stuff
 animationCounter = 0;
-direction = 1;
+animationLength = 5;
+rotationDir = 1;
 interacted = false;
+pushX = 0;
+pushY = 0;
