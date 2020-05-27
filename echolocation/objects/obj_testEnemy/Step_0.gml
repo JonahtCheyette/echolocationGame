@@ -5,6 +5,13 @@ if(abs(suspicion) > 1){
 	suspicion -= 0.0001;
 }
 
+//if at home
+if(abs(x - homebase[0]) <= 2 && abs(y - homebase[1]) <= 2){
+	dir = homeDir;
+} else {
+	dir = direction;
+}
+
 image_angle = dir;
 
 if(chasing){
@@ -28,15 +35,11 @@ if(shotCountdown < -25){
 
 //do pathing here
 if(abs(x - goal[0]) >= 2 && abs(y - goal[1]) >= 2){
-	myPath = path_add();
-	mp_grid_path(pathfindingGrid, myPath, x, y, goal[0], goal[1], true);
-	path_start(myPath, spd, path_action_stop, true);
-}
-
-
-//if at home
-if(abs(x - homebase[0]) <= 2 && abs(y - homebase[1]) <= 2){
-	dir = homeDir;
+	if(point_distance(x,y,goal[0],goal[1]) < 5000){
+		myPath = path_add();
+		mp_grid_path(pathfindingGrid, myPath, x, y, goal[0], goal[1], true);
+		path_start(myPath, spd, path_action_stop, true);
+	}
 }
 
 if(x != xprevious || y != yprevious){
@@ -46,11 +49,18 @@ if(x != xprevious || y != yprevious){
 		stepCounter = 0;
 		create_bubble(x, y, 25, 5, 1, 0);
 	}
-	dir = direction;
 } else {
 	//isn't moving
 	if(shotCountdown < -25){
 		//isn't stopped in order to shoot
+		//open the door
+		if(myPath != undefined){
+			with(collision_line(x,y, x + lengthdir_x(20,dir), x + lengthdir_y(20,dir), obj_immobile, true, false)){
+				pushX = other.x;
+				pushY = other.y;
+				event_user(0);
+			}
+		}
 		stepCounter = 0;
 		if(abs(x - goal[0]) <= 20 && abs(y - goal[1]) <= 20){
 			array_copy(goal, 0, homebase, 0, 2);
@@ -61,16 +71,14 @@ if(x != xprevious || y != yprevious){
 			goingToAlarm = false;
 			if(collision_line(x,y, goal[0], goal[1], obj_blocksSight, true, false) < 100000){
 				with(collision_circle(x, y, 100, obj_alarm, false, true)){
-					event_user(0);
+					if(object_index == obj_door){
+						pushX = other.x;
+						pushY = other.y;
+						event_user(0);
+					}
 				}
 			}
 		}
-	}
-}
-
-if(chasing){
-	if(collision_line(x,y,goal[0], goal[1], obj_immobile, true, false) < 100000){
-		dir = point_direction(x, y, goal[0], goal[1]);
 	}
 }
 

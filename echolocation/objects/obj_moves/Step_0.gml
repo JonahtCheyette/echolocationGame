@@ -10,14 +10,15 @@ if(object_index == obj_player){
 
 	knockbackX *= 0.5;
 	knockbackY *= 0.5;
-}
+
 
 // collisions
 if (place_meeting(x + hspd, y, obj_immobile)){
-	while(!place_meeting(x + sign(hspd), y, obj_immobile)){
-		x += sign(hspd);
+		while(!place_meeting(x + sign(hspd), y, obj_immobile)){
+			x += sign(hspd);
+		}
+		hspd = 0;
 	}
-	hspd = 0;
 }
 
 if(object_index == obj_player){
@@ -28,11 +29,13 @@ if(object_index == obj_player){
 
 x += hspd;
 
-if (place_meeting(x, y + vspd, obj_immobile)){
-	while(!place_meeting(x, y + sign(vspd), obj_immobile)){
-		y += sign(vspd);
+if(object_index == obj_player){
+	if (place_meeting(x, y + vspd, obj_immobile)){
+		while(!place_meeting(x, y + sign(vspd), obj_immobile)){
+			y += sign(vspd);
+		}
+		vspd = 0;
 	}
-	vspd = 0;
 }
 
 if(object_index == obj_player){
